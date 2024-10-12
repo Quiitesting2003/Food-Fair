@@ -1,0 +1,114 @@
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("/xe/image/food-fair.jpg");
+  background-size: cover;
+  background-color: rgba(0,0,0,0,0.22);
+}
+#header {
+  position:relative;
+  z-index: 100;
+  width: 100%;
+}
+#header .header-nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 94px;
+  padding: 1.6rem 6rem;
+
+  background-color: #181818;
+}
+@media (max-width: 1024px) {
+  #header .header-nav {
+    height: 60px;
+    padding: 0.8rem 2rem;
+  }
+}
+#header .header-nav .header-nav-left {
+  flex: 1;
+  display: flex;
+}
+#header .header-nav .header-nav-left .logo {
+  height: fit-content;
+}
+#header .header-nav .header-nav-left .logo img {
+  width: 6rem;
+}
+
+#header .header-nav .header-nav-left__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#header .header-nav .header-nav-left__list a{
+  text-decoration: none;
+  color: white;
+}
+#header .header-nav .header-nav-left__list li {
+  position: relative;
+  display: block;
+  margin-left: 2.5rem;
+  height: fit-content;
+  text-transform: uppercase;
+}
+#header .header-nav .header-nav-left__list li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+#header .header-nav .header-nav-left__list li:hover::after {
+  width: 100%;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #333;
+}
+
+.social-icons a:hover {
+  color: #ff0000;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+

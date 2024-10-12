@@ -1,0 +1,250 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/image/form.jpg");
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+    margin-left: 0;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: goldenrod;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: black;
+    font-size: 24px;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    margin-right: 0;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-right: auto;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm .inputBox input[type="button"]
+{
+    width: 100px;
+    background: orangered;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo
+    {
+        width: 100%;
+    }
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.footer{
+  margin-top: 150px;
+  margin-bottom: -20px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+}
+.footer div{
+  text-align: center;
+}
+.col-2{
+  flex-grow: 2;
+}
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+form input{
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+#app {
+    margin-bottom: 50px; /* Thêm khoảng trống 50px dưới phần #app */
+  }
+  
+  .footer {
+    margin-top: 50px; /* Thêm khoảng trống 50px trên phần footer */
+  }
+  .send-button {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    .cancel-button {
+        background-color: #e74c3c;
+        color: white;
+        margin-left: 10px;
+    }
+    .map {
+        max-width: 300px; 
+        margin: 20px auto; 
+      }

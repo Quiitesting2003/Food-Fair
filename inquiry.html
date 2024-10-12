@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style-inquiry.css">
+    <script src="https://kit.fontawesome.com/5c60600a7d.js" crossorigin="anonymous"></script>
+    <script>
+function showAlert() {
+    alert("Thank you for your submission!");
+        }
+        
+function cancelForm() {
+    document.getElementById('registration-form').reset();
+        }
+    </script>
+
+ </head>
+<body>
+    <div id="app">
+        <div id="header">
+            <div class="header-nav">
+                <div class="header-nav-left">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="image/chef-logo.png" alt="">
+                    </a>
+                  </div>
+                  
+                    <ul class="header-nav-left__list">
+                        <li class="header-nav-left__item">
+                            <a href="events.html">Program Events</a>
+                        </li>
+                        <li class="header-nav-left__item">
+                            <a href="information.html">General Information</a>
+                        </li>
+                        <li class="header-nav-left__item">
+                            <a href="participation.html">Information to Participation</a>
+                        </li>
+                        <li class="header-nav-left__item">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="header-nav-left__item">
+                            <a href="inquiry.html">Inquiry / Visitor Form</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Please Contact Our Team If You Want To Participate In This International Traditional Food Fair 2023.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>123, ABC Street, XYZ City<br>VietNam</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Hotline</h3>
+                            <p>+0123456789</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>info-foodfair2023@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form id="registration-form">
+                        <h2>Register Form</h2>
+                        <div class="inputBox">
+                            <input type="text" name="full-name" required="required" id="full-name">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required" id="email">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required" id="comments"></textarea>
+                            <span>Your Comments</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send" onclick="showAlert()" class="send-button">
+                            <input type="button" value="Cancel" onclick="cancelForm()" class="cancel-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+    <div class="footer">
+        <div class="col-1" style="font-size: 18px;"> 
+            <h3>Food Fair 2023</h3>
+            <a href="#">Program Events</a>
+            <a href="#">General Information</a>
+            <a href="#">Information to Participation</a>
+            <a href="#">About Us</a>
+            <a href="#">Inquiry/Vistor Form</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="text" placeholder="Your Email Address">
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>123, ABC Street, XYZ City<br>HaNoi, VietNam</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="map">
+                <img src="/image/map.jpg">
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
